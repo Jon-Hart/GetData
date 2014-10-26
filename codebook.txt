@@ -1,0 +1,32 @@
+Features
+========
+
+The features in the summarized dataset come from a 3 axis accelerometer and a 3 axis gyroscope.  The data was originally separated by a low-pass filter into Body and Gravity components using a low frequency Butterworth filter(0.3Hz).
+
+subject: Numerical subject ID
+Activity: The actual activity of the subject WALKING, WALKING_UPSTAIRS. WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+
+The remaining features are the mean value observed for a particular subject and activity.  The features are described using the following.
+
+The first letter is either f or t for frequency domain(FFT transformed) or t for time domain.  
+The letters up to the period are particular measurement of the following list.
+
+BodyAcc
+GravityAcc
+BodyAccJerk
+BodyGyro
+BodyGyroJerk
+BodyAccMag
+GravityAccMag
+BodyAccJerkMag
+BodyGyroMag
+BodyGyroJerkMag
+
+After the period is the type of statistical transformation used initially(mean or std for standard deviation).
+The second period if present separates the axis direction(X, Y, Z) Where Z is the direction of gravity and X and Y are the horizontal directions.
+
+All measurements have been normalized and bounded to the interval [-1, 1].  Because of the normalization all of the values are unitless.
+
+Reference
+-------
+Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
